@@ -5,7 +5,7 @@ import { userValidatorSchema } from "../../validators/validator.ts";
 
 const pingRouter = Router()
 
-pingRouter.route("/").get(validate(userValidatorSchema), pingHandler)
+pingRouter.route("/").get(pingHandler)
 
 
 export default pingRouter
