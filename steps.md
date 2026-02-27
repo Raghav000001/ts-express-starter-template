@@ -1,9 +1,9 @@
 # Steps to set up the starter template
 
 # 1. Clone the repository
-git clone 
+git clone https://github.com/Raghav000001/ts-express-starter-template.git
 # (If you want to clone it into a custom folder name:)
-# git clone https://github.com/singhsanket143/Express-Typescript-Starter-Project.git my-awesome-project
+# git clone https://github.com/Raghav000001/ts-express-starter-template.git my-awesome-project
 
 # 2. Go into the project folder
 cd Express-Typescript-Starter-Project
