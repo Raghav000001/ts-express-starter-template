@@ -1,21 +1,26 @@
-## types of logs
-- info
-- warning
-- error
-- fatal
-- success
-- debug
+# Steps to set up the starter template
 
-## logging library
- - winston => we will use winston
- - morgan
- - pino
+# 1. Clone the repository
+git clone 
+# (If you want to clone it into a custom folder name:)
+# git clone https://github.com/singhsanket143/Express-Typescript-Starter-Project.git my-awesome-project
 
-## how to have a req co-relation id 1st approach
-   this approach is not so good as it does not care about the corner cases => agar koi aisa case hua jo touch hi nahi kar raha reqest object ko (i.e - background jobs) crons in linux **
-  - generate a unique id (uuid)
-  - put the id in current req using the middleware
-  - and then app.use(that Middleware)
+# 2. Go into the project folder
+cd Express-Typescript-Starter-Project
+# (If you used a custom name above, use that instead)
+# cd my-awesome-project
 
-  solution => use { AsyncLocalStorage } from "node:async_hooks";
+# 3. Install all dependencies
+npm install
+# or shorter version:
+# npm i
 
+# 4. Create a .env file and add the PORT variable
+# Recommended simple way (creates or overwrites .env):
+echo "PORT=3000" > .env
+
+# Alternative (appends if file already exists):
+# echo "PORT=3000" >> .env
+
+# 5. Start the development server
+npm run dev

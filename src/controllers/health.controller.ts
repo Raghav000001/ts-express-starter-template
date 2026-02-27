@@ -1,13 +1,11 @@
 import type { Request , Response } from "express";
-import logger from "../config/logger.config.ts";
+import {  internalServerError } from "../errors/app.errors.ts";
 
  const healthHandler = async (req:Request,res:Response) => {
       try {
-         logger.info('req went in the handler')
-        res.status(200).json({message:"app is running all good and fine"})                                                                                      
+        res.status(200).json({message:"app is running all good and fine"})                                                                                   
       } catch (error) {
-        console.log("error in health check controller");
-
+        throw new internalServerError("error in health handler")
       }
   }
 

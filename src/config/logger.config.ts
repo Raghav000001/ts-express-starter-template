@@ -4,8 +4,11 @@ import DailyRotateFile from "winston-daily-rotate-file";
 
 const logger = winston.createLogger({
   format: winston.format.combine(
+    // add timestamp to the log output with the specified format
     winston.format.timestamp({ format: "MM-DD-YYYY HH:mm:ss" }),
     winston.format.json(),
+
+    // actual configuration of the log output, we are using JSON format and adding the correlationId to the log output
     winston.format.printf(({ timestamp, level, message, ...data }) => {
       const output = {
         timestamp,
