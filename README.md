@@ -85,12 +85,6 @@ The server will be running at `http://localhost:3000` with hot-reload enabled. �
 
 ---
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/Raghav000001/ts-express-starter-template/issues).
-
----
 
 ## 📄 License
 
